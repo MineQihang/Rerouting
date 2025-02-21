@@ -432,23 +432,6 @@ vector<Route> request(int deletedEdgeId) {
             bestReservedFrequenciesMask = tempReservedFrequenciesMask;
             bestRoutesScore = routesScore;
         }
-        // Update idleService
-        // vector<int> successService;
-        // vector<int> newIdleService;
-        // for (const auto& serviceId : idleService) {
-        //     if (tempRoutes[serviceId].p.empty()) {
-        //         newIdleService.push_back(serviceId);
-        //     } else {
-        //         successService.push_back(serviceId);
-        //     }
-        // }
-        // cerr << "iter: " << iter << " failedServices: " << failedServices << " successService: " << successService.size() << " newIdleService: " << newIdleService.size() << endl;
-        // shuffle(successService.begin(), successService.end(), randomEngine);
-        // shuffle(newIdleService.begin(), newIdleService.end(), randomEngine);
-        // for (const auto& serviceId : successService) {
-        //     newIdleService.push_back(serviceId);
-        // }
-        // idleService = newIdleService;
     }
     
     // 4. 更新当前的路径
